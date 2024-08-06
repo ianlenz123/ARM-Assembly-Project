@@ -1,0 +1,23 @@
+.data
+var1: .word 5
+var2: .word 2
+var3: .word 3
+var4: .word 0
+
+.text
+.global _start
+
+_start:
+    LDR r0, =var1
+    LDR r1, [r0]
+    LDR r2, =var2
+    LDR r3, [r2]
+    ADD r1, r1, r3
+    LDR r4, =var3
+    LDRB r5, [r4]
+    MUL r1, r1, r5
+    LDR r6, =var4
+    STR r1, [r6]
+    
+    MOV r7, #1   // Exit system call
+    SVC 0        // Software interrupt to invoke system call
