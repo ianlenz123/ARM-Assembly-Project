@@ -9,7 +9,7 @@ This project involves converting Intel x86 assembly code to ARM assembly code an
 3. Run the executable: `./code`
 
 ## Video Explanation
-[Link to video explaining the project and the code](#) <!-- Replace with actual video link -->
+(https://youtu.be/nI9lLFllQ_4)
 
 ## Files
 - `code.s` - ARM assembly source code
